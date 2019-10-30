@@ -207,6 +207,7 @@ According to the feature plot, loan grade has the highest importance that determ
 
 ## Recommendations
 
+
 * LendingClub must be careful when identifying potential borrowers who fit certain criteria. For example, borrowers who do not own a home *and* are applying for a small business or wedding loan, this could be a negative combination that results in the borrower defaulting on a future loan. 
 
 
@@ -215,12 +216,9 @@ According to the feature plot, loan grade has the highest importance that determ
 
 * LendingClub must be aware that low graded loans, undeniably, have a higher chance of default probability. They should be willing to work with these borrowers to ensure they are making adequate and timely payments. Possibly reducing interest rates or installments for these clients could help. 
 
+
 ## Further Work
 
-One of the drawbacks is just the limited number of people who defaulted on their loan in the 8 years of data (2007-2015) present on the dataset. I could use an updated dataframe which consist next 3 years values (2015-2018) and see how many of the current loans were paid off or defaulted or even charged off. Then these new data points can be used for predicting them or even used to train the model again to improve its accuracy.
+One of the drawbacks is simply the limited number of people who defaulted on their loan in the 8 years of data (2007-2015). We could use an updated data frame which consists of the next 3 years values (2015-2018) and see how many of the current loans were paid off, defaulted, or even charged off. Then, these new data points can be used for prediction or and training new models.
 
-
-Since we had a lot of categorical data, we cannot apply PCA for dimensionality reduction. Because of this, we can try some different type of variable selection method like 'multiple correspondence analysis' to reduce the dimensionality and select the most important variables from the columns.
-
-
-Since the algorithm puts around 36% of non-defaulters in the default class, we might want to look further into this issue to make the model more robust.
+Since the algorithm puts around 36% of non-defaulters in the default class, we might want to look further into this issue to help the model accurately predict capable borrowers.
